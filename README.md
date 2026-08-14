@@ -79,6 +79,25 @@ import createConfig, {
 @blockquote/eslint-config/test
 ```
 
+### Overrides
+
+The preset is a flat config array, so you can extend or override any rule by appending a config object. The last matching config wins:
+
+```js
+import {defineConfig} from 'eslint/config';
+import createConfig from '@blockquote/eslint-config';
+
+export default defineConfig([
+  ...createConfig({tsconfigRootDir: import.meta.dirname}),
+  {
+    files: ['**/test/**/*.{js,ts}'],
+    rules: {
+      'import-x/no-extraneous-dependencies': 'warn',
+    },
+  },
+]);
+```
+
 ## License
 
 MIT
