@@ -9,6 +9,7 @@ export const testFilesRules = {
 
   rules: {
     '@typescript-eslint/no-explicit-any': 'off',
+    'import-x/no-extraneous-dependencies': 'off',
     'no-unused-expressions': 'off',
   },
 };
