@@ -1,0 +1,99 @@
+{
+  "name": "@blockquote/eslint-config",
+  "version": "0.1.0",
+  "description": "Shared ESLint flat config for blockquote-web-components",
+  "keywords": [
+    "eslint",
+    "flat-config",
+    "blockquote",
+    "web-components",
+    "lit"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oscarmarina/eslint-config.git"
+  },
+  "license": "MIT",
+  "author": "Oscar Marina",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "import": "./src/index.js"
+    },
+    "./index.js": {
+      "types": "./src/index.d.ts",
+      "import": "./src/index.js"
+    },
+    "./ignores": {
+      "types": "./src/ignores.d.ts",
+      "import": "./src/ignores.js"
+    },
+    "./base": {
+      "types": "./src/base.d.ts",
+      "import": "./src/base.js"
+    },
+    "./import-x": {
+      "types": "./src/import-x.d.ts",
+      "import": "./src/import-x.js"
+    },
+    "./lit-a11y": {
+      "types": "./src/lit-a11y.d.ts",
+      "import": "./src/lit-a11y.js"
+    },
+    "./wc": {
+      "types": "./src/wc.d.ts",
+      "import": "./src/wc.js"
+    },
+    "./lit": {
+      "types": "./src/lit.d.ts",
+      "import": "./src/lit.js"
+    },
+    "./typescript": {
+      "types": "./src/typescript.d.ts",
+      "import": "./src/typescript.js"
+    },
+    "./html": {
+      "types": "./src/html.d.ts",
+      "import": "./src/html.js"
+    },
+    "./rules": {
+      "types": "./src/rules.d.ts",
+      "import": "./src/rules.js"
+    },
+    "./test": {
+      "types": "./src/test.d.ts",
+      "import": "./src/test.js"
+    }
+  },
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"No tests\""
+  },
+  "dependencies": {
+    "@eslint/js": "^10.0.1",
+    "@html-eslint/eslint-plugin": "^0.64.0",
+    "@html-eslint/parser": "^0.64.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-html": "^8.1.4",
+    "eslint-plugin-import-x": "^4.17.1",
+    "eslint-plugin-lit": "^2.3.1",
+    "eslint-plugin-lit-a11y": "^5.1.1",
+    "eslint-plugin-wc": "^3.1.0",
+    "globals": "^17.11.0",
+    "typescript-eslint": "^8.67.0"
+  },
+  "devDependencies": {
+    "eslint": "^10.8.1",
+    "typescript": "^6.0.3"
+  },
+  "peerDependencies": {
+    "eslint": "^10.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

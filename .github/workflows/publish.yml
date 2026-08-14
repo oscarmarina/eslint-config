@@ -1,0 +1,52 @@
+name: Publish to npm
+
+on:
+  push:
+    tags:
+      - '*'
+
+permissions:
+  contents: write
+  id-token: write
+
+env:
+  NODE_VERSION: 26.x
+
+concurrency:
+  group: publish-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          registry-url: https://registry.npmjs.org/
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build
+        run: npm run build
+
+      - name: Determine npm tag
+        run: |
+          version=$(node -p "require('./package.json').version")
+
+          if [[ "$version" == *"-rc"* ]]; then
+            echo "tag=rc" >> "$GITHUB_ENV"
+          else
+            echo "tag=latest" >> "$GITHUB_ENV"
+          fi
+
+      - name: Publish to npm
+        run: npm publish --access public --tag "${{ env.tag }}"
