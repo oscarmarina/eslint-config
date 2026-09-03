@@ -3,6 +3,7 @@
     ".": {
       "release-type": "node",
       "package-name": "@blockquote/eslint-config",
+      "include-component-in-tag": false,
       "release-rules": [
         {
           "type": "chore",
