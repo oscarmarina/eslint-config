@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.6](https://github.com/oscarmarina/eslint-config/compare/v0.1.5...v0.1.6) (2026-09-03)
+
+
+### Bug Fixes
+
+* publish packages from releases ([7759414](https://github.com/oscarmarina/eslint-config/commit/7759414216f83f91c194b35def2cdca2aba45f3c))
+
 ## [0.1.5](https://github.com/oscarmarina/eslint-config/compare/v0.1.4...v0.1.5) (2026-09-03)
 
 
