@@ -1,0 +1,15 @@
+{
+  "packages": {
+    ".": {
+      "release-type": "node",
+      "package-name": "@blockquote/eslint-config",
+      "release-rules": [
+        {
+          "type": "chore",
+          "scope": "deps",
+          "release": "patch"
+        }
+      ]
+    }
+  }
+}
