@@ -75,7 +75,7 @@
   },
   "dependencies": {
     "@eslint/js": "^10.0.1",
-    "@html-eslint/eslint-plugin": "^0.65.0",
+    "@html-eslint/eslint-plugin": "^0.66.0",
     "@html-eslint/parser": "^0.65.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-html": "^8.2.0",
