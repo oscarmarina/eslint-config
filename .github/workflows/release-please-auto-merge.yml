@@ -1,0 +1,25 @@
+name: Release Please auto-merge
+
+on:
+  pull_request_target:
+    types:
+      - opened
+      - synchronize
+      - reopened
+      - labeled
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  auto-merge:
+    if: contains(github.event.pull_request.labels.*.name, 'autorelease: pending') || startsWith(github.event.pull_request.head.ref, 'release-please--')
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Enable auto-merge for Release Please
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_URL: ${{ github.event.pull_request.html_url }}
+        run: gh pr merge "$PR_URL" --auto --squash
