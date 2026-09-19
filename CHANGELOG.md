@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.8](https://github.com/oscarmarina/eslint-config/compare/v0.1.7...v0.1.8) (2026-09-19)
+
+
+### Bug Fixes
+
+* **deps:** bump @html-eslint/eslint-plugin from 0.66.0 to 0.66.1 ([#11](https://github.com/oscarmarina/eslint-config/issues/11)) ([77edb38](https://github.com/oscarmarina/eslint-config/commit/77edb387932af0e861b6e78829a912b441771b11))
+* **deps:** bump @html-eslint/parser from 0.66.0 to 0.66.1 ([#12](https://github.com/oscarmarina/eslint-config/issues/12)) ([3b637e9](https://github.com/oscarmarina/eslint-config/commit/3b637e90e8bbb203b523c8144da5538e0f193b8b))
+
 ## [0.1.7](https://github.com/oscarmarina/eslint-config/compare/v0.1.6...v0.1.7) (2026-09-19)
 
 
