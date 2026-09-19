@@ -1,5 +1,20 @@
 # Changelog
 
+## [0.1.7](https://github.com/oscarmarina/eslint-config/compare/v0.1.6...v0.1.7) (2026-09-19)
+
+
+### Bug Fixes
+
+* **deps:** configure automated releases for dependency bumps ([682d7ff](https://github.com/oscarmarina/eslint-config/commit/682d7ffff873be49622b24362f893b603522b8ec))
+
+
+### Miscellaneous
+
+* **deps-dev:** bump eslint from 10.9.1 to 10.10.0 ([#6](https://github.com/oscarmarina/eslint-config/issues/6)) ([e98a1b4](https://github.com/oscarmarina/eslint-config/commit/e98a1b44c75d64c6b865c4ecd57a5c5347fa0c38))
+* **deps:** bump @html-eslint/eslint-plugin from 0.65.0 to 0.66.0 ([#7](https://github.com/oscarmarina/eslint-config/issues/7)) ([7ff2093](https://github.com/oscarmarina/eslint-config/commit/7ff2093e3aa79860c97cd3b663953abb9cdebc95))
+* **deps:** bump @html-eslint/parser from 0.65.0 to 0.66.0 ([#8](https://github.com/oscarmarina/eslint-config/issues/8)) ([4af03c2](https://github.com/oscarmarina/eslint-config/commit/4af03c2ee87e0870836128100967bf181eb02ed8))
+* **deps:** bump typescript-eslint from 8.69.0 to 8.70.0 ([#9](https://github.com/oscarmarina/eslint-config/issues/9)) ([62eb243](https://github.com/oscarmarina/eslint-config/commit/62eb243addae27978991bd60d9d7e34f4977746f))
+
 ## [0.1.6](https://github.com/oscarmarina/eslint-config/compare/v0.1.5...v0.1.6) (2026-09-03)
 
 
