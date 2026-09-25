@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.9](https://github.com/oscarmarina/eslint-config/compare/v0.1.8...v0.1.9) (2026-09-25)
+
+
+### Bug Fixes
+
+* **deps-dev:** bump eslint from 10.10.0 to 10.11.0 ([#14](https://github.com/oscarmarina/eslint-config/issues/14)) ([d0870e6](https://github.com/oscarmarina/eslint-config/commit/d0870e621220fb7422422109032945fc9873ed89))
+
 ## [0.1.8](https://github.com/oscarmarina/eslint-config/compare/v0.1.7...v0.1.8) (2026-09-19)
 
 

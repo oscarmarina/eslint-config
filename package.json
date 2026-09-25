@@ -1,6 +1,6 @@
 {
   "name": "@blockquote/eslint-config",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "Shared ESLint flat config for blockquote-web-components",
   "keywords": [
     "eslint",
