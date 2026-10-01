@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.11](https://github.com/oscarmarina/eslint-config/compare/v0.1.10...v0.1.11) (2026-10-01)
+
+
+### Bug Fixes
+
+* **workflow:** correct syntax for accessing pull request labels in auto-merge job ([20d1c38](https://github.com/oscarmarina/eslint-config/commit/20d1c38f279f63e4e2b8a9dc6eb612b42be5d7a1))
+
 ## [0.1.10](https://github.com/oscarmarina/eslint-config/compare/v0.1.9...v0.1.10) (2026-10-01)
 
 
