@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.15](https://github.com/oscarmarina/eslint-config/compare/v0.1.14...v0.1.15) (2026-10-24)
+
+
+### Bug Fixes
+
+* **deps:** raise minimum dependency ranges ([#33](https://github.com/oscarmarina/eslint-config/issues/33)) ([7ff5d45](https://github.com/oscarmarina/eslint-config/commit/7ff5d4593f5557850d0312ea3c2c2967859e6d61))
+
 ## [0.1.14](https://github.com/oscarmarina/eslint-config/compare/v0.1.13...v0.1.14) (2026-10-24)
 
 
