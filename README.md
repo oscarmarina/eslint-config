@@ -5,7 +5,7 @@ Shared ESLint flat config for blockquote-web-components (Lit / Web Components).
 ## Requirements
 
 - Node.js >= 20.11 (for `import.meta.dirname`)
-- ESLint >= 9 (flat config)
+- ESLint >= 10 (flat config)
 
 ## Install
 
