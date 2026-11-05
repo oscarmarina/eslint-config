@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.1.16](https://github.com/oscarmarina/eslint-config/compare/v0.1.15...v0.1.16) (2026-11-05)
+
+
+### Bug Fixes
+
+* **deps:** bump globals from 17.13.0 to 17.14.0 ([4d77b14](https://github.com/oscarmarina/eslint-config/commit/4d77b142bfeddd64623b10821cfd331ca96cf5eb))
+* **deps:** bump typescript-eslint from 8.72.0 to 8.72.1 ([#39](https://github.com/oscarmarina/eslint-config/issues/39)) ([a69ace5](https://github.com/oscarmarina/eslint-config/commit/a69ace59e3398ac5d12cd38ac69856e1bf37d188))
+
+
+### Miscellaneous
+
+* **deps-dev:** bump eslint from 10.13.0 to 10.14.0 ([#40](https://github.com/oscarmarina/eslint-config/issues/40)) ([4a97d61](https://github.com/oscarmarina/eslint-config/commit/4a97d612f97ca4338ba17a2cbe267ac309b67c9c))
+
 ## [0.1.15](https://github.com/oscarmarina/eslint-config/compare/v0.1.14...v0.1.15) (2026-10-24)
 
 
