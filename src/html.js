@@ -1,10 +1,14 @@
 import htmlEslint from '@html-eslint/eslint-plugin';
-import htmlEslintParser from '@html-eslint/parser';
-import eslintPluginHtml from 'eslint-plugin-html';
+import { createHtmlProcessor } from 'eslint-plugin-html';
 //
 // ──────────────────────────────────────────────────────────────
 // HTML
 // ──────────────────────────────────────────────────────────────
+//
+// `@html-eslint` lints the HTML itself; the `eslint-plugin-html` processor
+// extracts inline `<script>` tags as virtual `*.html/part-N.js` files, so they
+// get the regular JS config. `lintHtml: true` keeps the whole HTML as a block
+// for `@html-eslint`.
 //
 export const htmlFilesConfig = {
   ...htmlEslint.configs['flat/recommended'],
@@ -14,9 +18,8 @@ export const htmlFilesConfig = {
     '@html-eslint': htmlEslint,
   },
 
-  languageOptions: {
-    parser: htmlEslintParser,
-  },
+  language: '@html-eslint/html',
+  processor: createHtmlProcessor({ lintHtml: true }),
 };
 
 export const htmlFilesRules = {
@@ -29,12 +32,5 @@ export const htmlFilesRules = {
     '@html-eslint/no-extra-spacing-tags': 'off',
     '@html-eslint/attrs-newline': 'off',
     '@html-eslint/use-baseline': ['error', { available: 'newly' }],
-  },
-};
-export const eslintPluginHtmlConfig = {
-  files: ['**/*.html'],
-
-  plugins: {
-    eslintPluginHtml,
   },
 };

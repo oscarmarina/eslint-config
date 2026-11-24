@@ -15,5 +15,4 @@ export { createTsFilesConfig, tsFilesRules } from './typescript.js';
 export {
   htmlFilesConfig,
   htmlFilesRules,
-  eslintPluginHtmlConfig,
 } from './html.js';

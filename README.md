@@ -49,7 +49,7 @@ The preset builds on ESLint's recommended configs and adds:
 - `typescript-eslint` strict + stylistic rules (type-aware, via `projectService`)
 - `eslint-plugin-import-x` (resolution, extensions, extraneous dependencies)
 - `eslint-plugin-lit`, `eslint-plugin-lit-a11y`, `eslint-plugin-wc`
-- `@html-eslint` rules
+- `@html-eslint` rules for `.html` files, plus inline `<script>` linting via the `eslint-plugin-html` processor (`lintHtml: true`)
 - `globals` for browser, ES2023 and mocha
 - `eslint-config-prettier` (disable style rules, keep formatting to Prettier)
 

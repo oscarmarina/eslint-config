@@ -3,9 +3,8 @@ export const htmlFilesConfig: {
   plugins: {
     '@html-eslint': typeof htmlEslint;
   };
-  languageOptions: {
-    parser: typeof htmlEslintParser;
-  };
+  language: string;
+  processor: ReturnType<typeof createHtmlProcessor>;
   rules: Record<
     string,
     | 'error'
@@ -32,13 +31,5 @@ export namespace htmlFilesRules {
     )[];
   };
 }
-export namespace eslintPluginHtmlConfig {
-  let files_1: string[];
-  export { files_1 as files };
-  export namespace plugins {
-    export { eslintPluginHtml };
-  }
-}
 import htmlEslint from '@html-eslint/eslint-plugin';
-import htmlEslintParser from '@html-eslint/parser';
-import eslintPluginHtml from 'eslint-plugin-html';
+import { createHtmlProcessor } from 'eslint-plugin-html';

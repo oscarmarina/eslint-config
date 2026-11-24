@@ -12,7 +12,6 @@ import { createTsFilesConfig, tsFilesRules } from './typescript.js';
 import {
   htmlFilesConfig,
   htmlFilesRules,
-  eslintPluginHtmlConfig,
 } from './html.js';
 import eslintConfigPrettier from 'eslint-config-prettier';
 import { globalRulesConfig } from './rules.js';
@@ -38,7 +37,6 @@ export const createConfig = ({ tsconfigRootDir } = {}) => [
   tsFilesRules,
   htmlFilesConfig,
   htmlFilesRules,
-  eslintPluginHtmlConfig,
   testFilesRules,
   globalRulesConfig,
   eslintConfigPrettier,
